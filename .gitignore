@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+*.env
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Pytest cache
+.pytest_cache/
+
+# Python profiling
+.prof
+
+# AWS credentials (if any local config)
+.aws/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# macOS files
+.DS_Store
