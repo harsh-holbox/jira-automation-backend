@@ -204,7 +204,7 @@ def generate_code():
                     {
                         "type": "text",
                         "text": (
-                            "\n\nHuman: Write a clean, well-commented Python code and return only the python code without any extra details like 'Here's a clean, well-commented Python code that implements the described weather widget functionality:' for the following description:\n"
+                            "\n\nHuman: Return the code in js. Write a clean, well-commented Python code and return only the python code without any extra details like 'Here's a clean, well-commented Python code that implements the described weather widget functionality:' for the following description:\n"
                             f"{description}\n\nAssistant:"
                         ),
                     }
