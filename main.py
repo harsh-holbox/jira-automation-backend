@@ -204,14 +204,17 @@ def generate_code():
                     {
                         "type": "text",
                         "text": (
-                            "\n\nHuman: Return the code in js. Write a clean, well-commented Python code and return only the python code without any extra details like 'Here's a clean, well-commented Python code that implements the described weather widget functionality:' for the following description:\n"
-                            f"{description}\n\nAssistant:"
+                            "\n\nHuman: Write clean, well-commented Javascript code **only**. "
+                            "Do **not** include any explanations, descriptions, greetings, or text outside the code. "
+                            "Return only the Python code, nothing else. "
+                            f"Here is the description:\n{description}\n\nAssistant:"
                         ),
                     }
                 ],
             }
         ],
     }
+
 
     try:
         response = bedrock.invoke_model(
