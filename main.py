@@ -204,9 +204,9 @@ def generate_code():
                     {
                         "type": "text",
                         "text": (
-                            "\n\nHuman: Write clean, well-commented Javascript code **only**. "
+                            "\n\nHuman: Write clean, well-commented Verilog (or synthesizable ASIC-level HDL) code **only**. "
                             "Do **not** include any explanations, descriptions, greetings, or text outside the code. "
-                            "Return only the Python code, nothing else. "
+                            "Return only the Verilog/HDL code, nothing else. "
                             f"Here is the description:\n{description}\n\nAssistant:"
                         ),
                     }
@@ -214,7 +214,6 @@ def generate_code():
             }
         ],
     }
-
 
     try:
         response = bedrock.invoke_model(
